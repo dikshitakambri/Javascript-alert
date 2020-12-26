@@ -6,7 +6,8 @@ count = 1;
 
 function game() {
   
-  if(count % 5 ==0 && count % 3==0){
+  for(count=1; count <50 ;count++){
+    if(count % 5 ==0 && count % 3==0){
     container.push("BuzzFizz");
   }
   else if(count % 5 ==0 ){
@@ -18,8 +19,7 @@ function game() {
   else {
     container.push(count);
   }
-  count++;
-  
+  }
   console.log(container);
 }
 game();
